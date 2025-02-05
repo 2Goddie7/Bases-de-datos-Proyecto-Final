@@ -32,8 +32,6 @@ LINK DEL INFORME
 
    #Scripts
 1. Modelado
-   
-[Uploading Crear_Tablas-Restricciones_Integridad.sql…]()
 
 2. Seguridad
       
