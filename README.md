@@ -1,5 +1,9 @@
 # Bases-de-datos-Proyecto-Final
-Morán, Muela y Mullo.
+Intregrantes:
+Mateo Morán
+David Muela
+DiegoMullo.
+
 # Proyecto Sistema de Reserva de Aerolineas
 PONER LINK DEL CANVA AQUI:
 
