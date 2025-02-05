@@ -1,0 +1,94 @@
+C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld.exe, Version: 8.0.40 (MySQL Community Server - GPL). started with:
+TCP Port: 3306, Named Pipe: MySQL
+Time                 Id Command    Argument
+2025-02-05T02:55:25.375925Z	    9 Query	SHOW VARIABLES LIKE 'general_log%'
+2025-02-05T02:55:25.393386Z	    8 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2025-02-05T02:55:25.394193Z	    8 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 119
+2025-02-05T02:55:25.394662Z	    8 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 119
+2025-02-05T02:56:37.013414Z	    9 Query	INSERT INTO Usuarios (nombre, email) VALUES ('Dan Pérez', 'dan@example.com')
+2025-02-05T02:56:37.109576Z	    9 Query	INSERT INTO Usuarios (nombre, email) VALUES ('Maria López', 'Maria@example.com')
+2025-02-05T02:56:44.512070Z	    9 Query	SELECT * FROM Usuarios
+LIMIT 0, 1000
+2025-02-05T02:56:44.521639Z	    8 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2025-02-05T02:56:44.522380Z	    8 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 126
+2025-02-05T02:56:44.522764Z	    8 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 126
+2025-02-05T02:56:44.523883Z	    8 Query	SHOW INDEX FROM `pruebaauditoria`.`Usuarios`
+2025-02-05T02:56:54.976883Z	    9 Query	UPDATE Usuarios SET email = 'nuevo_correo@example.com' WHERE id = 2
+2025-02-05T02:57:03.760356Z	    9 Query	DELETE FROM Usuarios WHERE id = 4
+2025-02-05T02:57:38.850500Z	    9 Query	SELECT event_time, user_host, argument 
+FROM mysql.general_log 
+WHERE argument LIKE '%Usuarios%'
+LIMIT 0, 1000
+2025-02-05T02:57:38.867180Z	    8 Query	SELECT st.* FROM performance_schema.events_statements_current st JOIN performance_schema.threads thr ON thr.thread_id = st.thread_id WHERE thr.processlist_id = 9
+2025-02-05T02:57:38.867802Z	    8 Query	SELECT st.* FROM performance_schema.events_stages_history_long st WHERE st.nesting_event_id = 135
+2025-02-05T02:57:38.868129Z	    8 Query	SELECT st.* FROM performance_schema.events_waits_history_long st WHERE st.nesting_event_id = 135
+2025-02-05T02:57:38.869201Z	    8 Query	SHOW INDEX FROM `mysql`.`general_log`
+2025-02-05T02:58:27.387661Z	   10 Connect	davidmuela@localhost on  using SSL/TLS
+2025-02-05T02:58:27.387731Z	   10 Connect	Access denied for user 'davidmuela'@'localhost' (using password: NO)
+2025-02-05T02:58:52.712349Z	    9 Query	GRANT ALL PRIVILEGES ON pruebaauditoria.* TO 'davidmuela'@'localhost'
+2025-02-05T02:58:52.821139Z	    9 Query	GRANT ALL PRIVILEGES ON pruebaauditoria.* TO 'davidmuela'@'localhost'
+2025-02-05T02:58:55.217142Z	    9 Query	FLUSH PRIVILEGES
+2025-02-05T02:58:55.338556Z	    9 Query	FLUSH PRIVILEGES
+2025-02-05T02:58:59.253480Z	   11 Connect	davidmuela@localhost on  using SSL/TLS
+2025-02-05T02:58:59.253525Z	   11 Connect	Access denied for user 'davidmuela'@'localhost' (using password: NO)
+2025-02-05T02:59:00.962780Z	   12 Connect	davidmuela@localhost on  using SSL/TLS
+2025-02-05T02:59:00.963092Z	   12 Query	set autocommit=1
+2025-02-05T02:59:00.963243Z	   12 Query	SELECT current_user()
+2025-02-05T02:59:00.963403Z	   12 Query	SET CHARACTER SET utf8
+2025-02-05T02:59:00.963512Z	   12 Query	SET NAMES utf8
+2025-02-05T02:59:00.963681Z	   12 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2025-02-05T02:59:00.966156Z	   12 Query	SELECT CONNECTION_ID()
+2025-02-05T02:59:00.966373Z	   12 Query	show character set where charset = 'utf8mb4'
+2025-02-05T02:59:00.967170Z	   12 Query	SET NAMES 'utf8mb4'
+2025-02-05T02:59:00.967432Z	   12 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2025-02-05T02:59:00.968514Z	   12 Query	set autocommit=1
+2025-02-05T02:59:00.975233Z	   13 Connect	davidmuela@localhost on  using SSL/TLS
+2025-02-05T02:59:00.975396Z	   13 Query	set autocommit=1
+2025-02-05T02:59:00.975633Z	   13 Query	SELECT current_user()
+2025-02-05T02:59:00.975823Z	   13 Query	SET CHARACTER SET utf8
+2025-02-05T02:59:00.975972Z	   13 Query	SET NAMES utf8
+2025-02-05T02:59:00.976145Z	   13 Query	SET SQL_SAFE_UPDATES=1
+2025-02-05T02:59:00.976334Z	   13 Query	SELECT CONNECTION_ID()
+2025-02-05T02:59:00.976644Z	   13 Query	show character set where charset = 'utf8mb4'
+2025-02-05T02:59:00.977618Z	   13 Query	SET NAMES 'utf8mb4'
+2025-02-05T02:59:00.977874Z	   13 Query	SHOW SESSION STATUS LIKE 'Ssl_cipher'
+2025-02-05T02:59:00.979215Z	   13 Query	set autocommit=1
+2025-02-05T02:59:00.979457Z	   13 Query	SHOW SESSION VARIABLES LIKE 'sql_mode'
+2025-02-05T02:59:00.981739Z	   13 Query	SHOW SESSION VARIABLES LIKE 'version_comment'
+2025-02-05T02:59:00.984419Z	   13 Query	SHOW SESSION VARIABLES LIKE 'version'
+2025-02-05T02:59:00.986763Z	   13 Query	SELECT current_user()
+2025-02-05T02:59:00.987032Z	   13 Query	SHOW SESSION VARIABLES LIKE 'lower_case_table_names'
+2025-02-05T02:59:01.211913Z	   12 Query	SHOW DATABASES
+2025-02-05T02:59:01.212427Z	   13 Query	show engines
+2025-02-05T02:59:01.212868Z	   13 Query	show charset
+2025-02-05T02:59:01.213523Z	   13 Query	show collation
+2025-02-05T02:59:01.216399Z	   13 Query	show variables
+2025-02-05T02:59:01.219212Z	   13 Query	SHOW SESSION VARIABLES LIKE 'version_compile_os'
+2025-02-05T02:59:01.220935Z	   13 Query	SHOW SESSION VARIABLES LIKE 'offline_mode'
+2025-02-05T02:59:01.228532Z	   13 Query	SHOW SESSION VARIABLES LIKE 'wait_timeout'
+2025-02-05T02:59:01.229976Z	   13 Query	SHOW SESSION VARIABLES LIKE 'interactive_timeout'
+2025-02-05T02:59:01.804143Z	   12 Query	SHOW FULL TABLES FROM `proyecto_final`
+2025-02-05T02:59:01.806572Z	   12 Query	SHOW PROCEDURE STATUS WHERE Db='proyecto_final'
+2025-02-05T02:59:01.808397Z	   12 Query	SHOW FUNCTION STATUS WHERE Db='proyecto_final'
+2025-02-05T02:59:01.809600Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`aeropuertos`
+2025-02-05T02:59:01.811387Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`avion`
+2025-02-05T02:59:01.813151Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`clientes`
+2025-02-05T02:59:01.814697Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`pagos`
+2025-02-05T02:59:01.816043Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`reservas`
+2025-02-05T02:59:01.817360Z	   13 Query	SHOW FULL COLUMNS FROM `proyecto_final`.`vuelos`
+2025-02-05T02:59:20.117750Z	   13 Query	use pruebaauditorio
+2025-02-05T02:59:20.117818Z	   13 Init DB	Access denied for user 'davidmuela'@'localhost' to database 'pruebaauditorio'
+2025-02-05T02:59:20.324900Z	   13 Query	use pruebaauditorio
+2025-02-05T02:59:20.324952Z	   13 Init DB	Access denied for user 'davidmuela'@'localhost' to database 'pruebaauditorio'
+2025-02-05T02:59:23.716873Z	   12 Query	SHOW FULL TABLES FROM `pruebaauditoria`
+2025-02-05T02:59:23.718146Z	   12 Query	SHOW PROCEDURE STATUS WHERE Db='pruebaauditoria'
+2025-02-05T02:59:23.719202Z	   12 Query	SHOW FUNCTION STATUS WHERE Db='pruebaauditoria'
+2025-02-05T02:59:23.720407Z	   13 Query	SHOW FULL COLUMNS FROM `pruebaauditoria`.`usuarios`
+2025-02-05T02:59:30.629301Z	   13 Query	use pruebaauditoria
+2025-02-05T02:59:30.629603Z	   13 Query	SELECT DATABASE()
+2025-02-05T02:59:36.949173Z	   12 Query	SHOW FULL COLUMNS FROM `pruebaauditoria`.`usuarios`
+2025-02-05T02:59:36.952259Z	   12 Query	SHOW INDEXES FROM `pruebaauditoria`.`usuarios`
+2025-02-05T03:00:00.856843Z	   13 Query	INSERT INTO Clientes (nombre, email) VALUES
+('Ca1rlos Gómez', 'carlos.gomez@3email.com')
+2025-02-05T03:00:11.701860Z	   13 Query	INSERT INTO usuarios (nombre, email) VALUES
+('Ca1rlos Gómez', 'carlos.gomez@3email.com')
