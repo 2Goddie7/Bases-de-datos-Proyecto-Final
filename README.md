@@ -31,6 +31,13 @@ LINK DEL INFORME
    Poner el word de responsabilidades
 
    #Scripts
+   1. Modelado
+      
+   2. Seguridad
+      
+   3. Auditoria
+      
+   4. Optimizacion
 
 
 
