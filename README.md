@@ -7,9 +7,8 @@ David Muela
 
 DiegoMullo
 
-Link informe:
+Link diapositivas
 
-https://epnecuador-my.sharepoint.com/:w:/g/personal/brandon_moran_epn_edu_ec/EYdNJ_v8Fv5Ct7WiL4BrKcMB-UvRyVRKSFUM_iq52gUuMw?e=IugsCc
-
+https://www.canva.com/design/DAGeMWVbl_s/IzZBj3q5JFyDeSQJwztr0g/edit?utm_content=DAGeMWVbl_s&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
