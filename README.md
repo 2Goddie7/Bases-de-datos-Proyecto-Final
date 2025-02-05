@@ -31,13 +31,15 @@ LINK DEL INFORME
    Poner el word de responsabilidades
 
    #Scripts
-   1. Modelado
+1. Modelado
+   
+[Uploading Crear_Tablas-Restricciones_Integridad.sql…]()
+
+2. Seguridad
       
-   2. Seguridad
+3. Auditoria
       
-   3. Auditoria
-      
-   4. Optimizacion
+4. Optimizacion
 
 
 
